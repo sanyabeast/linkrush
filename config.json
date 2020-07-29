@@ -1,7 +1,7 @@
 {
-    "lifetime":3000,
-    "url":"https://www.youtube.com/watch?v=wWH-PRs_2jQ",
-    "count":20,
+    "lifetime":5,
+    "url":"http://sanyabeast.xyz/rsa256_jwks/?name=test1023",
+    "count":256,
     "hidden":false,
-    "delay":0.5
+    "delay":0
 }

@@ -41,8 +41,8 @@ async function create_window({
 }) 
     {
     windows_count ++
-    let w = 1920 / cols
-    let h = 1080 / rows
+    let w = Math.floor(1920 / cols)
+    let h = Math.floor(1080 / rows)
     let main_window = new BrowserWindow({
 
         width: w,
@@ -64,7 +64,6 @@ async function create_window({
         /**set random useragent string aset window`s useragent */
         userAgent: rand_from_array( useragent_strings )()
     })
-
     main_window.setPosition(
         (window_index%cols)*w, 
         (Math.floor(window_index/ rows))*h 
@@ -91,13 +90,3 @@ function kill_window() {
 }
 app.on('window-all-closed', function() {
 })
-
-
-
-// function sleep(timeout) {
-//     let now = + new Date 
-//     let dl = now + timeout * 1000
-//     while (now<dl){
-//         now = + new Date 
-//     }
-// }
