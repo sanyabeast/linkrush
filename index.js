@@ -52,6 +52,7 @@ async function create_window({
             zoomFactor:0.2,
             preload: path.join(__dirname, 'preload.js'),
             backgroundThrottling: false,
+            partition: `session_${ window_index }`
         }
     })
 
