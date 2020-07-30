@@ -43,8 +43,10 @@ async function create_window({
     windows_count ++
     let w = Math.floor(1920 / cols)
     let h = Math.floor(1080 / rows)
-    let main_window = new BrowserWindow({
 
+    let session_name = config.separate_sessions ? `persist:session_${ window_index }` : `persist:default_session`
+
+    let main_window = new BrowserWindow({
         width: w,
         height: h,
         webPreferences: {
@@ -52,7 +54,7 @@ async function create_window({
             zoomFactor:0.2,
             preload: path.join(__dirname, 'preload.js'),
             backgroundThrottling: false,
-            partition: `session_${ window_index }`
+            partition: session_name
         }
     })
 
