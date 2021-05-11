@@ -14,7 +14,7 @@
     "await-spawn": "^3.0.0",
     "electron": "^9.1.1",
     "jsonfile": "^6.0.1",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "yargs": "^15.4.1"
   }
 }
