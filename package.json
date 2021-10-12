@@ -12,7 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "await-spawn": "^3.0.0",
-    "electron": "^9.1.1",
+    "electron": "^11.5.0",
     "jsonfile": "^6.0.1",
     "lodash": "^4.17.19",
     "yargs": "^15.4.1"
